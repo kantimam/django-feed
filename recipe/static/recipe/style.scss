@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flexCenterAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app{
+    height: 100vh;
+}
