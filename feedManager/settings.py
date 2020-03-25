@@ -28,14 +28,15 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 TEMPLATE_DIR=(
-    "feed/recipe/templates"
+    "feed/feedClient/templates"
 )
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'recipe.apps.RecipeConfig',
+    'feedApi.apps.FeedApiConfig',
+    'feedClient.apps.FeedClientConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'feed.urls'
+ROOT_URLCONF = 'feedManager.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'feed.wsgi.application'
+WSGI_APPLICATION = 'feedManager.wsgi.application'
 
 
 # Database
