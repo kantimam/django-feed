@@ -35,7 +35,7 @@ TEMPLATE_DIR=(
 # Application definition
 
 INSTALLED_APPS = [
-    'feedApi.apps.FeedApiConfig',
+    'food.apps.FoodConfig',
     'feedClient.apps.FeedClientConfig',
     'django.contrib.admin',
     'django.contrib.auth',

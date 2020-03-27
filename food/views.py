@@ -6,6 +6,6 @@ def index(request):
     return HttpResponse("done")
 
 def search(request):
-    return render(request, 'recipe/index.html', {
+    return render(request, 'food/index.html', {
         'foo' : 'bar'
     })
